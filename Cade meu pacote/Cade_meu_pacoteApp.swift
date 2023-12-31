@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Cade_meu_pacoteApp: App {
+  @State private var orders = [Order(code: "ID1", name: "iphone 15 pro max")]
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          ContentView(orders: orders)
         }
     }
 }

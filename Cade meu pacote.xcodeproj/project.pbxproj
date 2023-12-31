@@ -11,6 +11,11 @@
 		D08614622B41E63E0004176F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08614612B41E63E0004176F /* ContentView.swift */; };
 		D08614642B41E6400004176F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08614632B41E6400004176F /* Assets.xcassets */; };
 		D08614682B41E6400004176F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08614672B41E6400004176F /* Preview Assets.xcassets */; };
+		D08614702B41E84D0004176F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = D086146F2B41E84D0004176F /* data.json */; };
+		D08614722B41E8CE0004176F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08614712B41E8CE0004176F /* Order.swift */; };
+		D08614752B41E97C0004176F /* OrderListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08614742B41E97C0004176F /* OrderListItemView.swift */; };
+		D08614772B41EB7E0004176F /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08614762B41EB7E0004176F /* OrderListView.swift */; };
+		D08614792B41EE190004176F /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08614782B41EE190004176F /* OrderDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		D08614632B41E6400004176F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D08614652B41E6400004176F /* Cade_meu_pacote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cade_meu_pacote.entitlements; sourceTree = "<group>"; };
 		D08614672B41E6400004176F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D086146F2B41E84D0004176F /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		D08614712B41E8CE0004176F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		D08614742B41E97C0004176F /* OrderListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListItemView.swift; sourceTree = "<group>"; };
+		D08614762B41EB7E0004176F /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		D08614782B41EE190004176F /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				D086145F2B41E63E0004176F /* Cade_meu_pacoteApp.swift */,
-				D08614612B41E63E0004176F /* ContentView.swift */,
+				D08614732B41E8D30004176F /* Model */,
+				D086146E2B41E77E0004176F /* View */,
 				D08614632B41E6400004176F /* Assets.xcassets */,
 				D08614652B41E6400004176F /* Cade_meu_pacote.entitlements */,
 				D08614662B41E6400004176F /* Preview Content */,
@@ -67,6 +78,26 @@
 				D08614672B41E6400004176F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D086146E2B41E77E0004176F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D08614612B41E63E0004176F /* ContentView.swift */,
+				D08614782B41EE190004176F /* OrderDetailView.swift */,
+				D08614742B41E97C0004176F /* OrderListItemView.swift */,
+				D08614762B41EB7E0004176F /* OrderListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D08614732B41E8D30004176F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D086146F2B41E84D0004176F /* data.json */,
+				D08614712B41E8CE0004176F /* Order.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08614682B41E6400004176F /* Preview Assets.xcassets in Resources */,
+				D08614702B41E84D0004176F /* data.json in Resources */,
 				D08614642B41E6400004176F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08614772B41EB7E0004176F /* OrderListView.swift in Sources */,
+				D08614752B41E97C0004176F /* OrderListItemView.swift in Sources */,
+				D08614792B41EE190004176F /* OrderDetailView.swift in Sources */,
+				D08614722B41E8CE0004176F /* Order.swift in Sources */,
 				D08614622B41E63E0004176F /* ContentView.swift in Sources */,
 				D08614602B41E63E0004176F /* Cade_meu_pacoteApp.swift in Sources */,
 			);
