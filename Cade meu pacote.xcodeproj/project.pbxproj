@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D07E6BB22B4627F9005A78D8 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07E6BB12B4627F9005A78D8 /* LabelView.swift */; };
 		D08614602B41E63E0004176F /* Cade_meu_pacoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D086145F2B41E63E0004176F /* Cade_meu_pacoteApp.swift */; };
 		D08614622B41E63E0004176F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08614612B41E63E0004176F /* ContentView.swift */; };
 		D08614642B41E6400004176F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D08614632B41E6400004176F /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D07E6BB12B4627F9005A78D8 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		D086145C2B41E63E0004176F /* Cade meu pacote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cade meu pacote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D086145F2B41E63E0004176F /* Cade_meu_pacoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cade_meu_pacoteApp.swift; sourceTree = "<group>"; };
 		D08614612B41E63E0004176F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D07E6BB32B4627FF005A78D8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D07E6BB12B4627F9005A78D8 /* LabelView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		D08614532B41E63E0004176F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,7 @@
 		D086146E2B41E77E0004176F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D07E6BB32B4627FF005A78D8 /* Shared */,
 				D08614612B41E63E0004176F /* ContentView.swift */,
 				D08614782B41EE190004176F /* OrderDetailView.swift */,
 				D08614742B41E97C0004176F /* OrderListItemView.swift */,
@@ -173,6 +184,7 @@
 			files = (
 				D08614772B41EB7E0004176F /* OrderListView.swift in Sources */,
 				D08614752B41E97C0004176F /* OrderListItemView.swift in Sources */,
+				D07E6BB22B4627F9005A78D8 /* LabelView.swift in Sources */,
 				D08614792B41EE190004176F /* OrderDetailView.swift in Sources */,
 				D08614722B41E8CE0004176F /* Order.swift in Sources */,
 				D08614622B41E63E0004176F /* ContentView.swift in Sources */,

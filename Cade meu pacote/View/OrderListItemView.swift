@@ -4,7 +4,6 @@
 //
 //  Created by Peter on 31/12/23.
 //
-
 import SwiftUI
 
 struct OrderListItemView: View {
@@ -14,6 +13,7 @@ struct OrderListItemView: View {
       HStack {
         Image(systemName: "star")
         Text(order.name).fontWeight(.bold)
+        LabelView("In progress")
       }
     }
 }
