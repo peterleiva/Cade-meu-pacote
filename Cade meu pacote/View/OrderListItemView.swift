@@ -11,8 +11,10 @@ struct OrderListItemView: View {
   
     var body: some View {
       HStack {
-        Image(systemName: "star")
-        Text(order.name).fontWeight(.bold)
+        Text(order.name)
+          .fontWeight(.bold)
+          .lineLimit(1)
+        Spacer()
         LabelView("In progress")
       }
     }

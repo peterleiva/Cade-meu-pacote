@@ -12,9 +12,11 @@ struct LabelView: View {
 
     var body: some View {
       Text(label)
+        .foregroundStyle(.white)
+        .font(.caption)
         .padding(.horizontal, 10)
         .padding(.vertical, 5)
-        .background(.red)
+        .background(.blue)
         .cornerRadius(20)
     }
   

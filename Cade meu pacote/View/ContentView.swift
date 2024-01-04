@@ -9,17 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
   var orders: [Order]
-    var body: some View {
-      NavigationStack {
+  @State private var path: [Order] = []
+  
+  
+  var body: some View {
+    VStack {
+      if path.isEmpty {
+        Button("first!!") {
+          path = [orders.first].compactMap { $0 }
+          print(path)
+        }
+      }
+      
+      NavigationStack(path: $path) {
         List(orders) { order in
-          NavigationLink(order.name) {
+          NavigationLink {
+            OrderDetailView(order: order)
+          } label: {
             OrderListItemView(order: order)
           }
         }
+        .navigationTitle("Pedidos")
       }
-      .navigationDestination(for: Order.self) { order in
-        OrderDetailView(order: order)
-      }
+    }
     }
 }
 

@@ -10,7 +10,7 @@ import SwiftUI
 struct OrderDetailView: View {
   var order: Order
     var body: some View {
-      Text(order.name)
+      Text("order: \(order.name)")
     }
 }
 
